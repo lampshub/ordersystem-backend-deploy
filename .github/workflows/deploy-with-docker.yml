@@ -20,7 +20,7 @@ jobs:
         password: ${{ secrets.DOCKER_PASSWORD }}
 
     - name: Push Docker Image to DockerHub
-      run: docker push lamps777/myordersystem :latest
+      run: docker push lamps777/myordersystem:latest
 
     - name: instance1 ec2 ssh login and docker run
       uses: appleboy/ssh-action@master  #ssh 로그인
